@@ -2,8 +2,8 @@ services:
   - type: web
     name: comunica-ads-backend
     env: node
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && node index.js
+    buildCommand: "cd backend && npm install"
+    startCommand: "cd backend && node index.js"
     envVars:
       - key: FACEBOOK_ACCESS_TOKEN
         sync: false
